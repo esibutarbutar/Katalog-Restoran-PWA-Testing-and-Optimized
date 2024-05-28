@@ -68,9 +68,14 @@
     .detail {
       grid-template-areas: "detailHeader" "detailInfo" "detailOverview" "detailReviews";
     }
+    
   
    
   }
+  @media (max-width: 320px) {
+    .resto__poster {
+      width: 100%;
+    }}
 
  
   

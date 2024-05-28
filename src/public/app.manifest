@@ -1,6 +1,6 @@
 {
-    "id": "restaurant-catalogue-lite-pwa-1",
-    "start_url": "./index.html",
+    "id": "Restaurant-catalogue-lite-pwa-1",
+    "start_url": "/",
     "name": "Restaurant Catalogue Lite",
     "short_name": "Restaurant Lite",
     "description": "Free Catalogue Restaurant for you",

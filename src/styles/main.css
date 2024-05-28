@@ -414,17 +414,21 @@ p {
 
 .detail {
   display: grid;
-  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview" "detailReviews detailReviews";
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "detailHeader"
+    "detailInfo"
+    "detailOverview"
+    "detailReviews";
   gap: 15px;
   font-size: 15px;
 }
 
-.detail > div {
-  margin: auto;
-}
-
 .detail__header {
   grid-area: detailHeader;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detail__poster {
@@ -506,4 +510,19 @@ p {
   text-align: center;
 }
 
+.menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px; /* Menambahkan jarak antar elemen grid */
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.menus li {
+  background-color: #f0f0f0; /* Warna latar belakang untuk setiap item */
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
 
