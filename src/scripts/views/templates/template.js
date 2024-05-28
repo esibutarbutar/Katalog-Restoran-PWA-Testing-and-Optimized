@@ -6,7 +6,7 @@ const createRestoDetailTemplate = (restaurants) => `
 <div class="detail__header">
 <h2 class="detail__title">${restaurants.name.toUpperCase()}</h2>
 
-<img class="resto__poster" src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" width="350px" height="500px" />
+<img class="resto__poster lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" width="350px" height="500px" />
 
 
 </div>
@@ -57,7 +57,7 @@ const createRestoDetailTemplate = (restaurants) => `
 const createHomePageTemplate = (restaurants) => `
   <div class="card">
     <div class="image-container"> <!-- Tambahkan container untuk gambar dan city -->
-      <img class="resto-img" alt="${restaurants.name}"
+      <img class="resto-img lazyload" alt="${restaurants.name}"
         src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}">
       <p class="city">${restaurants.city}</p> <!-- Tampilkan nama kota di atas gambar -->
     </div>
