@@ -9,8 +9,10 @@ const Home = {
     <h1 class="hero-heading">Discover delicious cuisines....</h1>
    
     <picture>
-        <source media="(max-width: 600px)" srcset="/images/heros/hero-image_4-large.jpg">
-        <img class="hero-image lazyload" src='/images/heros/hero-image_4-large.jpg' 
+        <source media="(max-width: 600px)" srcset="/images/heros/hero-image_4-large.jpg" type="image/jpeg">
+        <source media="(max-width: 600px)" srcset="/images/heros/hero-image_4-large.jpg" type=type="image/webp">
+
+        <img class="hero-image lazyload" src='/images/heros/hero-image_4-small.jpg' 
              alt="Hero Images">
       </picture>
   </div>
